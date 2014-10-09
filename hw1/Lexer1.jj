@@ -81,7 +81,7 @@ TOKEN:  // identifiers and integer literals
 {
   <#DIGIT:  ["0"-"9"]>            // internal tokens
 | <#LETTER: ["A"-"Z"]|["a"-"z"]>
-| <ID:      (<LETTER>)+> { Lexer1.tknName = "ID"; }
+| <ID:      (<LETTER>)+((<DIGIT>)?(<LETTER>)?)*>{ Lexer1.tknName = "ID"; }
 | <INTLIT:  (<DIGIT>)+>  { Lexer1.tknName = "INTLIT"; }
 | <STRLIT: "\"" (~["\"","\\","\n","\r"] | "\\" (["n","t","b","r","f","\\","\'","\""] | ["0"-"7"] (["0"-"7"])? | ["0"-"3"] ["0"-"7"] ["0"-"7"]))* "\""> { Lexer1.tknName = "STRLIT"; }
 }

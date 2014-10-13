@@ -1,4 +1,4 @@
-int i = 000023; && "Hello World!"
+int i = 000023; && == "Hello World!"
 The end.
 ad1
 ad2ad

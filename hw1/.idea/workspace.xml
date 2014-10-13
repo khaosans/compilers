@@ -67,19 +67,10 @@
       <file leaf-file-name="Lexer2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lexer2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="0" selection-start="3307" selection-end="3307" vertical-scroll-proportion="0.34567901" vertical-offset="1782" max-vertical-offset="4122">
+            <state line="172" column="66" selection-start="6081" selection-end="6111" vertical-scroll-proportion="0.49874055" vertical-offset="2898" max-vertical-offset="4428">
               <folding>
-                <element signature="e#0#8022#0" expanded="true" />
+                <element signature="e#0#8578#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testinput2.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tst/testinput2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -195,8 +186,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="SearchEverywhereHistory" value="&lt;" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.file">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -324,7 +318,31 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="file" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testinput5.txt " />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.file" />
+    </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -356,6 +374,26 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1215" height="895" extended-state="6" />
     <editor active="true" />
@@ -364,23 +402,23 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4300518" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901555" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901555" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20017108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20017108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4468912" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901555" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -410,7 +448,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="62" selection-start="7328" selection-end="7328" vertical-scroll-proportion="0.0" vertical-offset="3168" max-vertical-offset="4230">
           <folding>
-            <element signature="e#0#8022#0" expanded="true" />
+            <element signature="e#0#8578#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -431,14 +469,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908" />
+        <state line="69" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="51" selection-start="4370" selection-end="4370" vertical-scroll-proportion="0.0" vertical-offset="2358" max-vertical-offset="2934">
           <folding>
-            <element signature="e#0#8022#0" expanded="true" />
+            <element signature="e#0#8578#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -450,14 +490,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908" />
+        <state line="69" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="30" selection-start="3466" selection-end="3466" vertical-scroll-proportion="0.0" vertical-offset="2052" max-vertical-offset="2376">
           <folding>
-            <element signature="e#0#8022#0" expanded="true" />
+            <element signature="e#0#8578#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -469,45 +511,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="5" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1800" />
+        <state line="54" column="5" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1800">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="9" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="2340">
           <folding>
-            <element signature="e#0#8022#0" expanded="true" />
+            <element signature="e#0#8578#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="19" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.0" vertical-offset="657" max-vertical-offset="1782" />
+        <state line="56" column="19" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.0" vertical-offset="657" max-vertical-offset="1782">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="9" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="2340">
           <folding>
-            <element signature="e#0#8022#0" expanded="true" />
+            <element signature="e#0#8578#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1782" />
+        <state line="46" column="0" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1782">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="14" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.4691358" vertical-offset="216" max-vertical-offset="1908" />
+        <state line="31" column="14" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.4691358" vertical-offset="216" max-vertical-offset="1908">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="10" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/rt.jar!/sun/misc/IoTrace.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="23" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/rt.jar!/java/io/FileInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="22" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.34256926" vertical-offset="494" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/testinput2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.2720403" vertical-offset="0" max-vertical-offset="397">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tst/testinput1.txt">
@@ -517,18 +588,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tst/testinput2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="3307" selection-end="3307" vertical-scroll-proportion="0.34567901" vertical-offset="1782" max-vertical-offset="4122">
+        <state line="172" column="66" selection-start="6081" selection-end="6111" vertical-scroll-proportion="0.49874055" vertical-offset="2898" max-vertical-offset="4428">
           <folding>
-            <element signature="e#0#8022#0" expanded="true" />
+            <element signature="e#0#8578#0" expanded="true" />
           </folding>
         </state>
       </provider>

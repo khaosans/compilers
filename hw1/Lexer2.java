@@ -24,6 +24,7 @@ public class Lexer2 {
     static final int INTEGER=3;
     static final int OPERATOR = 4;
     static final int STRLIT = 5;
+    static final int COMMENT = 6;
 
     // Token object
     static class Token {
@@ -111,28 +112,7 @@ public class Lexer2 {
                         }while(c!='\n');
                         continue;
                     }
-                    else if (isLetter(c)) {
-                        int beginLine = linNum;
-                        int beginColumn = colNum;
-                        buffer.setLength(0);
-                        do {
-                            buffer.append((char) c);
-                            c = nextChar();
-                        } while (isLetter(c)||isInt(c));
-                        return new Token(ID, beginLine, beginColumn, buffer.toString());
-
-                    }
-                    else if (isInt(c)) {
-                        int beginLine = linNum;
-                        int beginColumn = colNum;
-                        buffer.setLength(0);
-                        do {
-                            buffer.append((char) c);
-                            c = nextChar();
-                        } while (isInt(c));
-                        return new Token(INTEGER, beginLine, beginColumn, parseInt(buffer.toString()));
-                    }
-                    else if(c=='&' && nextChar()=='&'){
+                    else if(c=='&'){
                         int beginLine = linNum;
                         int beginColumn = colNum-1;
                         return new Token(OPERATOR, beginLine, beginColumn, "&&");
@@ -158,12 +138,47 @@ public class Lexer2 {
                         int beginColumn = colNum-1;
                         return new Token(OPERATOR, beginLine, beginColumn, ">=");
                     }
+                    else if (isLetter(c)) {
+                        int beginLine = linNum;
+                        int beginColumn = colNum;
+                        buffer.setLength(0);
+                        do {
+                            buffer.append((char) c);
+                            c = nextChar();
+                        } while (isLetter(c)||isInt(c));
+                        return new Token(ID, beginLine, beginColumn, buffer.toString());
+
+                    }
+                    else if (isInt(c)) {
+                        int beginLine = linNum;
+                        int beginColumn = colNum;
+                        buffer.setLength(0);
+                        do {
+                            buffer.append((char) c);
+                            c = nextChar();
+                        } while (isInt(c));
+                        return new Token(INTEGER, beginLine, beginColumn, parseInt(buffer.toString()));
+                    }
+
 
                     else if(c == '+'||c=='-'||c=='*'||c=='/'||c=='!'||c=='<'||c=='>'){
                         int beginLine = linNum;
                         int beginColumn = colNum;
                         buffer.setLength(0);
                         buffer.append((char)c);
+                        if(c=='/'){
+                            if(nextChar()=='*'){
+                                while(true){
+                                    c=nextChar();
+                                    char next = (char) nextChar();
+                                    if(c =='*' && next =='/'){
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+
+
                         if(c=='>'||c=='<'||c=='!'){
                             beginColumn--;
                         }
@@ -190,7 +205,9 @@ public class Lexer2 {
                         String strLit = buffer.toString()+"\"";
                         return new Token(STRLIT, beginLine, beginColumn, strLit.replace('\t', ' '));
                     }
-                    throw new LexError(linNum, colNum, "Illegal char: " + (char)c);
+                    else {
+                        throw new LexError(linNum, colNum, "Illegal char: " + (char)c);
+                    }
             }
         }
     }

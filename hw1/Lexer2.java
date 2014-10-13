@@ -24,7 +24,7 @@ public class Lexer2 {
     static final int INTEGER=3;
     static final int OPERATOR = 4;
     static final int STRLIT = 5;
-    static final int COMMENT = 6;
+    static final int KEYWORD = 6;
 
     // Token object
     static class Token {
@@ -146,6 +146,9 @@ public class Lexer2 {
                             buffer.append((char) c);
                             c = nextChar();
                         } while (isLetter(c)||isInt(c));
+                        if(isKeyword(buffer.toString())){
+                            return new Token(KEYWORD, beginLine,beginColumn, buffer.toString());
+                        }
                         return new Token(ID, beginLine, beginColumn, buffer.toString());
 
                     }
@@ -171,8 +174,11 @@ public class Lexer2 {
                                 while(true){
                                     c=nextChar();
                                     char next = (char) nextChar();
-                                    if(c =='*' && next =='/'){
-                                        break;
+                                    if(c =='*'){
+                                        if(next=='/'){
+                                            c = nextChar();
+                                            break;
+                                        }
                                     }
                                 }
                             }
@@ -236,5 +242,13 @@ public class Lexer2 {
             case 5: return "STRLIT";
         }
         return "";
+    }
+
+    private static boolean isKeyword(String key){
+        return (key.equals("class") || key.equals("extends") || key.equals("static") || key.equals("public")
+                || key.equals("void") || key.equals("int") || key.equals("boolean") || key.equals("new")
+                || key.equals("if") || key.equals("else") || key.equals("while") || key.equals("return")
+                || key.equals("main") || key.equals("true") || key.equals("false") || key.equals("String")
+                || key.equals("System") || key.equals("out") || key.equals("println") || key.equals("this") );
     }
 }

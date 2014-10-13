@@ -9,22 +9,24 @@ public interface Lexer1Constants {
   /** End of File. */
   int EOF = 0;
   /** RegularExpression Id. */
-  int DIGIT = 25;
+  int DIGIT = 29;
   /** RegularExpression Id. */
-  int LETTER = 26;
+  int LETTER = 30;
   /** RegularExpression Id. */
-  int ID = 27;
+  int ID = 31;
   /** RegularExpression Id. */
-  int INTLIT = 28;
+  int INTLIT = 32;
   /** RegularExpression Id. */
-  int STRLIT = 29;
+  int STRLIT = 33;
   /** RegularExpression Id. */
-  int OPERATOR = 30;
+  int OPERATOR = 34;
   /** RegularExpression Id. */
-  int DELIMITER = 31;
+  int DELIMITER = 35;
 
   /** Lexical state. */
   int DEFAULT = 0;
+  /** Lexical state. */
+  int ML_COMMENT_STATE = 1;
 
   /** Literal token values. */
   String[] tokenImage = {
@@ -34,6 +36,9 @@ public interface Lexer1Constants {
     "\"\\n\"",
     "\"\\r\"",
     "<token of kind 5>",
+    "\"/*\"",
+    "\"*/\"",
+    "<token of kind 8>",
     "\"class\"",
     "\"extend\"",
     "\"static\"",
@@ -53,6 +58,7 @@ public interface Lexer1Constants {
     "\"System\"",
     "\"out\"",
     "\"println\"",
+    "\"this\"",
     "<DIGIT>",
     "<LETTER>",
     "<ID>",

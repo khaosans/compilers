@@ -44,6 +44,7 @@ public class Lexer2 {
 
     // File input handle
     static FileInputStream input = null;
+    static FileInputStream input2 = null;
 
     // Line and column numbers
     static int linNum = 1;
@@ -55,6 +56,7 @@ public class Lexer2 {
         try {
             if (args.length == 1) {
                 input = new FileInputStream(args[0]);
+                input2 = new FileInputStream(args[0]);
                 Token tkn;
                 int tknCnt = 0;
                 while ((tkn = nextToken()) != null) {
@@ -64,6 +66,7 @@ public class Lexer2 {
                     tknCnt++;
                 }
                 input.close();
+                input2.close();
                 System.out.println("Total: " + tknCnt + " tokens");
             } else {
                 System.err.println("Need a file name as command-line argument.");
@@ -86,11 +89,17 @@ public class Lexer2 {
         return c;
     }
 
+    static int peekChar() throws Exception {
+        int k = input2.read();
+        return k;
+    }
+
     // Recognize the next token and return its code.
     //
     static Token nextToken() throws Exception {
         StringBuilder buffer = new StringBuilder();
         int c = nextChar();
+        peekChar();
         for (;;) {
             switch (c) {
 
@@ -103,32 +112,31 @@ public class Lexer2 {
                 case '\n':
                 case '\r':
                     c = nextChar();
+                    peekChar();
                     continue;
 
                 default:
-                    if(c=='/' && nextChar()=='/'){
-                        do{
-                            c = nextChar();
-                        }while(c!='\n');
-                        continue;
-                    }
-                    else if(c=='&'){
+                    if(c=='&' && peekChar()=='&'){
+                        nextChar();
                         int beginLine = linNum;
                         int beginColumn = colNum-1;
                         return new Token(OPERATOR, beginLine, beginColumn, "&&");
                     }
-                    else if(c=='!' && nextChar()=='='){
+                    else if(c=='!' && peekChar()=='='){
+                        nextChar();
                         int beginLine = linNum;
                         int beginColumn = colNum-1;
                         return new Token(OPERATOR, beginLine, beginColumn, "!=");
                     }
-                    else if(c=='|' && nextChar()=='|'){
+                    else if(c=='|' && peekChar()=='|'){
+                        nextChar();
                         int beginLine = linNum;
                         int beginColumn = colNum-1;
                         return new Token(OPERATOR, beginLine, beginColumn, "||");
                     }
 
-                    else if(c=='<' && nextChar()=='='){
+                    else if(c=='<' && peekChar()=='='){
+                        nextChar();
                         int beginLine = linNum;
                         int beginColumn = colNum-1;
                         return new Token(OPERATOR, beginLine, beginColumn, "<=");
@@ -145,6 +153,7 @@ public class Lexer2 {
                         do {
                             buffer.append((char) c);
                             c = nextChar();
+                            peekChar();
                         } while (isLetter(c)||isInt(c));
                         if(isKeyword(buffer.toString())){
                             return new Token(KEYWORD, beginLine,beginColumn, buffer.toString());
@@ -159,6 +168,7 @@ public class Lexer2 {
                         do {
                             buffer.append((char) c);
                             c = nextChar();
+                            peekChar();
                         } while (isInt(c));
                         return new Token(INTEGER, beginLine, beginColumn, parseInt(buffer.toString()));
                     }
@@ -170,24 +180,32 @@ public class Lexer2 {
                         buffer.setLength(0);
                         buffer.append((char)c);
                         if(c=='/'){
-                            if(nextChar()=='*'){
+                            int nextTo = nextChar();
+                            peekChar();
+                            if(nextTo=='*'){
+                                nextChar();
                                 while(true){
                                     c=nextChar();
                                     char next = (char) nextChar();
+                                    peekChar();
                                     if(c =='*'){
                                         if(next=='/'){
                                             c = nextChar();
+                                            peekChar();
                                             break;
                                         }
                                     }
                                 }
                             }
+                            if(nextTo=='/'){
+                                do{
+                                    c = nextChar();
+                                    peekChar();
+                                }while(c!='\n');
+                                continue;
+                            }
                         }
 
-
-                        if(c=='>'||c=='<'||c=='!'){
-                            beginColumn--;
-                        }
                         return new Token(OPERATOR, beginLine, beginColumn, buffer.toString());
                     }
                     else if(c == '=' || c == ';' || c == ',' || c =='.' ||c == '(' ||c ==')'||c=='['||c==']'||c=='{'||c=='}' ){
@@ -196,6 +214,7 @@ public class Lexer2 {
                         buffer.setLength(0);
                         buffer.append((char)c);
                         if(nextChar() == '='){
+                            peekChar();
                             return new Token(OPERATOR, beginLine, beginColumn, "==");
                         }
                         return new Token(DELIMITER, beginLine, beginColumn, buffer.toString());
@@ -207,6 +226,7 @@ public class Lexer2 {
                         do {
                             buffer.append((char) c);
                             c = nextChar();
+                            peekChar();
                         } while (c!='"');
                         String strLit = buffer.toString()+"\"";
                         return new Token(STRLIT, beginLine, beginColumn, strLit.replace('\t', ' '));
@@ -243,7 +263,6 @@ public class Lexer2 {
         }
         return "";
     }
-
     private static boolean isKeyword(String key){
         return (key.equals("class") || key.equals("extends") || key.equals("static") || key.equals("public")
                 || key.equals("void") || key.equals("int") || key.equals("boolean") || key.equals("new")

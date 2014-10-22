@@ -60,7 +60,8 @@ public class Lexer2 {
                 while ((tkn = nextToken()) != null) {
                     // ID token
                     System.out.println("(" + tkn.line + "," + tkn.column + ") "
-                            + tokenType(tkn.kind) + "(" + tkn.lexeme+")");
+                            + "\t"+ (tokenType(tkn.kind)==""? "":tokenType(tkn.kind)+"(")
+                            + tkn.lexeme+(tokenType(tkn.kind)==""? "":")"));
                     tknCnt++;
                 }
                 input.close();
@@ -106,13 +107,7 @@ public class Lexer2 {
                     continue;
 
                 default:
-                    if(c=='/' && nextChar()=='/'){
-                        do{
-                            c = nextChar();
-                        }while(c!='\n');
-                        continue;
-                    }
-                    else if(c=='&'){
+                    if(c=='&' && nextChar()=='&'){
                         int beginLine = linNum;
                         int beginColumn = colNum-1;
                         return new Token(OPERATOR, beginLine, beginColumn, "&&");
@@ -169,18 +164,23 @@ public class Lexer2 {
                         int beginColumn = colNum;
                         buffer.setLength(0);
                         buffer.append((char)c);
+                        StringBuilder buffer2 = new StringBuilder();
                         if(c=='/'){
-                            if(nextChar()=='*'){
-                                while(true){
+                            int next = nextChar();
+                            if(next=='*'){
+                                do {
                                     c=nextChar();
-                                    char next = (char) nextChar();
-                                    if(c =='*'){
-                                        if(next=='/'){
-                                            c = nextChar();
-                                            break;
-                                        }
+                                    buffer2.append((char)c);
+                                    //System.out.println(lastTwo(buffer2.toString()));
+                                    if(c==-1){
+                                        throw new LexError(linNum,colNum,"Unterminated Comment: ");
                                     }
-                                }
+                                }while(!lastTwo(buffer2.toString()).equals("*/"));
+                            }if(next=='/'){
+                                do{
+                                    c = nextChar();
+                                }while(c!='\n');
+                                continue;
                             }
                         }
 
@@ -207,7 +207,12 @@ public class Lexer2 {
                         do {
                             buffer.append((char) c);
                             c = nextChar();
+                            if(c=='\n' || c ==-1){
+                                throw new LexError(linNum,colNum,"Unterminated String: "+buffer.toString());
+                            }
                         } while (c!='"');
+
+
                         String strLit = buffer.toString()+"\"";
                         return new Token(STRLIT, beginLine, beginColumn, strLit.replace('\t', ' '));
                     }
@@ -218,6 +223,9 @@ public class Lexer2 {
         }
     }
 
+    private static String lastTwo(String str){
+        return str.length() > 2 ? str.substring(str.length() - 2) : str;
+    }
     // Return true if c is a letter.
     //
     private static boolean isLetter(int c) {
@@ -228,17 +236,21 @@ public class Lexer2 {
     }
 
 
-    private static String parseInt(String toParse){
-        int value = Integer.parseInt(toParse);
-        return String.valueOf(value);
+    private static String parseInt(String toParse) throws LexError {
+        try{
+            int value = Integer.parseInt(toParse);
+            return String.valueOf(value);
+        }catch (NumberFormatException ex){
+            throw new LexError(linNum, colNum, "Integer Overflow: " + toParse);
+        }
     }
 
     private static String tokenType(int num){
         switch (num){
             case 1: return "ID";
-            case 2: return "DELIMITER";
-            case 3: return "INT";
-            case 4: return "OPERATOR";
+            case 2: return "";
+            case 3: return "INTLIT";
+            case 4: return "";
             case 5: return "STRLIT";
         }
         return "";

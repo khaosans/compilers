@@ -67,10 +67,46 @@
       <file leaf-file-name="Lexer2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lexer2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="0" selection-start="3095" selection-end="3095" vertical-scroll-proportion="-4.6989474" vertical-offset="4140" max-vertical-offset="4680">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4896">
               <folding>
-                <element signature="e#0#9500#0" expanded="true" />
+                <element signature="e#0#10210#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testerror1.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tst/testerror1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testerror2.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tst/testerror2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testerror4.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tst/testerror4.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testerror3.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tst/testerror3.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,6 +126,10 @@
         <option value="$PROJECT_DIR$/test1.txt" />
         <option value="$PROJECT_DIR$/tst/testinput2.txt" />
         <option value="$PROJECT_DIR$/tst/testinput1.txt" />
+        <option value="$PROJECT_DIR$/tst/testerror1.txt" />
+        <option value="$PROJECT_DIR$/tst/testerror2.txt" />
+        <option value="$PROJECT_DIR$/tst/testerror3.txt" />
+        <option value="$PROJECT_DIR$/tst/testerror4.txt" />
         <option value="$PROJECT_DIR$/Lexer2.java" />
       </list>
     </option>
@@ -126,7 +166,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -148,6 +187,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,7 +207,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Application.file">
+  <component name="RunManager" selected="Application.UnterminatedComments">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -202,17 +242,18 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -240,6 +281,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -295,7 +349,77 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="file" type="Application" factoryName="Application">
+    <configuration default="false" name="1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testinput1.txt " />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testinput2.txt " />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testinput3.txt " />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="4" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testinput4.txt " />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="5" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Lexer2" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="tst/testinput5.txt " />
@@ -317,8 +441,80 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.file" />
+    <configuration default="false" name="illegal char" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testerror1.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="overflow" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testerror2.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="unterminated" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testerror3.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UnterminatedComments" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Lexer2" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tst/testerror4.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw1" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="Application.1" />
+      <item index="1" class="java.lang.String" itemvalue="Application.2" />
+      <item index="2" class="java.lang.String" itemvalue="Application.3" />
+      <item index="3" class="java.lang.String" itemvalue="Application.4" />
+      <item index="4" class="java.lang.String" itemvalue="Application.5" />
+      <item index="5" class="java.lang.String" itemvalue="Application.illegal char" />
+      <item index="6" class="java.lang.String" itemvalue="Application.overflow" />
+      <item index="7" class="java.lang.String" itemvalue="Application.unterminated" />
+      <item index="8" class="java.lang.String" itemvalue="Application.UnterminatedComments" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -373,7 +569,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1217" height="924" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -385,19 +581,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32901555" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901555" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901555" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20017108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.354717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2703165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.503886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -423,9 +619,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="0" selection-start="3095" selection-end="3095" vertical-scroll-proportion="0.0" vertical-offset="4140" max-vertical-offset="4680">
+          <folding>
+            <element signature="e#0#10210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lexer2.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="62" selection-start="7328" selection-end="7328" vertical-scroll-proportion="0.0" vertical-offset="3168" max-vertical-offset="4230">
           <folding>
-            <element signature="e#0#9500#0" expanded="true" />
+            <element signature="e#0#10210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -442,16 +647,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908">
-          <folding />
-        </state>
+        <state line="69" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="51" selection-start="4370" selection-end="4370" vertical-scroll-proportion="0.0" vertical-offset="2358" max-vertical-offset="2934">
           <folding>
-            <element signature="e#0#9500#0" expanded="true" />
+            <element signature="e#0#10210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -463,16 +666,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908">
-          <folding />
-        </state>
+        <state line="69" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1908" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="30" selection-start="3466" selection-end="3466" vertical-scroll-proportion="0.0" vertical-offset="2052" max-vertical-offset="2376">
           <folding>
-            <element signature="e#0#9500#0" expanded="true" />
+            <element signature="e#0#10210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -484,48 +685,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="5" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1800">
-          <folding />
-        </state>
+        <state line="54" column="5" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1800" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="9" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="2340">
           <folding>
-            <element signature="e#0#9500#0" expanded="true" />
+            <element signature="e#0#10210#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="19" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.0" vertical-offset="657" max-vertical-offset="1782">
-          <folding />
-        </state>
+        <state line="56" column="19" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.0" vertical-offset="657" max-vertical-offset="1782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="9" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="2340">
           <folding>
-            <element signature="e#0#9500#0" expanded="true" />
+            <element signature="e#0#10210#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1782">
-          <folding />
-        </state>
+        <state line="46" column="0" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lexer1.jj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="14" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.4691358" vertical-offset="216" max-vertical-offset="1908">
-          <folding />
-        </state>
+        <state line="31" column="14" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.4691358" vertical-offset="216" max-vertical-offset="1908" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test1.txt">
@@ -553,11 +746,46 @@
         <state line="4" column="17" selection-start="99" selection-end="99" vertical-scroll-proportion="0.1813602" vertical-offset="0" max-vertical-offset="397" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tst/testinput4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/testerror1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/testerror3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/testerror2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/testerror4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lexer2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="0" selection-start="3095" selection-end="3095" vertical-scroll-proportion="-4.6989474" vertical-offset="4140" max-vertical-offset="4680">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4896">
           <folding>
-            <element signature="e#0#9500#0" expanded="true" />
+            <element signature="e#0#10210#0" expanded="true" />
           </folding>
         </state>
       </provider>
